@@ -3,9 +3,8 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib import messages
 
+
 # Create your views here.
-
-
 def login(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -26,7 +25,6 @@ def login(request):
 
 def register(request):
     if request.method == 'POST':
-
         # get form values
         username = request.POST['username']
         email = request.POST['email']
